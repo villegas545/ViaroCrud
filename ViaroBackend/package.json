@@ -1,0 +1,31 @@
+{
+  "name": "viarobackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon  --exec babel-node server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3-rc.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-eslint": "^10.1.0",
+    "cors": "^2.8.5",
+    "eslint": "^8.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "sequelize-cli": "^6.3.0"
+  }
+}
