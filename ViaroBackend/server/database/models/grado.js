@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Grado.hasMany(models.Alumnogrado);
+      Grado.hasMany(models.Alumnogrado, { onDelete: 'cascade' });
       Grado.belongsTo(models.Profesor);
     }
   }

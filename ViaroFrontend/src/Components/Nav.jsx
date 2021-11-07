@@ -25,7 +25,7 @@ function Nav() {
           <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/alumnos">
+                <Link class="nav-link" aria-current="page" to="/alumnos">
                   Alumnos
                 </Link>
               </li>

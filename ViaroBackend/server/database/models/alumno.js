@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Alumno.hasMany(models.Alumnogrado);
+      Alumno.hasMany(models.Alumnogrado, { onDelete: 'cascade' });
       // define association here
     }
   }
@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       Nombre: DataTypes.STRING,
       Apellidos: DataTypes.STRING,
       Genero: DataTypes.STRING,
-      FechaNacimiento: DataTypes.DATE,
+      FechaNacimiento: DataTypes.DATEONLY,
     },
     {
       sequelize,

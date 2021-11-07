@@ -18,7 +18,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       FechaNacimiento: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
       },
       createdAt: {
         allowNull: false,

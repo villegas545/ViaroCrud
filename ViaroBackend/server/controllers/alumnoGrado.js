@@ -33,9 +33,10 @@ const getAlumnoGrados = async (req, res) => {
       {
       include: [
         {
-          model: db.Alumno,
+          model: db.Alumno
+        },{
           model:db.Grado
-        },
+        }
       ],
     }
     );
